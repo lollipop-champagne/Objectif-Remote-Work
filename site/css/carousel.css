@@ -7,7 +7,9 @@ body {
   color: #5a5a5a;
 }
 
-
+img{
+	background-color: rgb(37,127,83,0.8)!important;
+	}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
