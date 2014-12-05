@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WebRTC client leger</title>
+	<title>Humanity</title>
 	<link rel="stylesheet" href="../../layout.css" />
-	<link rel="stylesheet" type="text/css" href="../../css/component.css" />
+	
+	 <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<div id="st-container" class="st-container">
@@ -12,17 +24,15 @@
 				<div class="st-content">
 					<div id="st-trigger-effects">
 						<button data-effect="st-effect-1" class="contener">
-							<div class="menu1">&nbsp;</div>
-							<div class="menu2">&nbsp;</div>
-							<div class="menu3">&nbsp;</div>
+							<img id="bubble" class="bubble" alt="bubble" src="../../img/bubbleBtn.png" />
 						</button>
 					</div>
 				</div>
 			</div>
-			<h1>Prototype WebRTC</h1>
-			<button type="button" id="invitation" class="invitation" >&#43;</button>
+			<h1 id="titre">Humanity WebRTC</h1>
+			<img id="invitation" class="invitation" alt="invite" src="../../img/addBtn.png" />
 			<div id="participants">
-				<img class="img_participants" src="../../img/participants.png" alt="participants" />
+				<img class="img_participants" src="../../img/peopleBtn.png" alt="participants" />
 				<fieldset id="zone_parts">
 					<legend>Liste des participants</legend>
 					<ul id="list_parts"></ul>   
@@ -60,5 +70,14 @@
 	<script src="../../index.js"></script>
 	<script src="../../js/classie.js"></script>
 	<script src="../../js/sidebarEffects.js"></script>
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
