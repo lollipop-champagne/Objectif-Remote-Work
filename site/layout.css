@@ -263,7 +263,10 @@ header {
 .st-container,
 .st-content {
 	height: 100%;
-	display: inline;
+}
+
+.st-content {
+  display: inline;
 }
 
 .st-container {
