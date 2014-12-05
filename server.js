@@ -86,9 +86,9 @@ io.sockets.on('connection', function (socket, pseudo) {
 
       // setup e-mail data with unicode symbols
       var mailOptions = {
-        from: 'Web RTC <webrtcevry@gmail.com>', // sender address
+        from: 'Lollipop Champagne <webrtcevry@gmail.com>', // sender address
         to: data.destinataire, // list of receivers
-        subject: 'Invitation WebRTC', // Subject line
+        subject: 'Invitation Humanity', // Subject line
         text: 'Bonjour, '+ data.pseudo +' vous invite à rejoindre une room web RTC à cette adresse : '+ data.url, // plaintext body
         html: '<b>Bonjour, '+ data.pseudo +' vous invite à rejoindre une room web RTC à cette adresse : '+ data.url +'</b>' // html body
       };
@@ -96,9 +96,9 @@ io.sockets.on('connection', function (socket, pseudo) {
         // send mail with defined transport object
         transporter.sendMail(mailOptions, function(error, info){
           if(error){
-           console.log(error);
+           //console.log(error);
          }else{
-           console.log('Message sent: ' + info.response);
+           //console.log('Message sent: ' + info.response);
           }
         });
     });
@@ -113,5 +113,5 @@ server.listen(serverPort, function(err) {
     return console.log('Encountered error starting server: ', err);
   }
 
-  console.log('running @ http://localhost:' + serverPort + '/');
+  //console.log('running @ http://localhost:' + serverPort + '/');
 });
